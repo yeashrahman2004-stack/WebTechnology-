@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Club Executive Registration</title>
+</head>
+
+<body>
+
+    <h2 align="center">Club Executive Registration</h2>
+
+    <form>
+
+        <table align="center" cellpadding="8">
+
+            <!-- Full Name + Student ID -->
+            <tr>
+                <td>
+                    <label>Full Name:</label><br>
+                    <input type="text" name="fullname" required>
+                </td>
+                <td>
+                    <label>Student ID:</label><br>
+                    <input type="text" name="studentid" required>
+                </td>
+            </tr>
+
+            <!-- University Email + Phone Number -->
+            <tr>
+                <td>
+                    <label>University Email:</label><br>
+                    <input type="email" name="email" required>
+                </td>
+                <td>
+                    <label>Phone Number:</label><br>
+                    <input type="tel" name="phone" required>
+                </td>
+            </tr>
+
+            <!-- Department + Club Name -->
+            <tr>
+                <td>
+                    <label>Department:</label><br>
+                    <select name="department" required>
+                        <option value="">-- Select Department --</option>
+                        <option value="CSE">Computer Science & Engineering</option>
+                        <option value="EEE">Electrical & Electronic Engineering</option>
+                        <option value="BBA">Business Administration</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </td>
+                <td>
+                    <label>Club Name:</label><br>
+                    <input type="text" name="clubname" required>
+                </td>
+            </tr>
+
+            <!-- Club Position -->
+            <tr>
+                <td colspan="2">
+                    <label>Club Position:</label><br>
+                    <select name="position" required>
+                        <option value="">-- Select Position --</option>
+                        <option value="President">President</option>
+                        <option value="Vice President">Vice President</option>
+                        <option value="General Secretary">General Secretary</option>
+                        <option value="Executive">Executive Member</option>
+                    </select>
+                </td>
+            </tr>
+
+            <!-- Middle Section -->
+            <tr>
+                <td colspan="2">
+                    <label>Responsibilities:</label><br>
+                    <input type="checkbox" name="permissions" value="club_manage"> Club Manage<br>
+                    <input type="checkbox" name="permissions" value="member_approval"> Member Approval<br>
+                    <input type="checkbox" name="permissions" value="event_create"> Event Create<br>
+                    <input type="checkbox" name="permissions" value="recruitment"> Recruitment
+                </td>
+            </tr>
+
+            <!-- Password + Confirm Password -->
+            <tr>
+                <td>
+                    <label>Password:</label><br>
+                    <input type="password" name="password" required>
+                </td>
+                <td>
+                    <label>Confirm Password:</label><br>
+                    <input type="password" name="confirm_password" required>
+                </td>
+            </tr>
+
+            <!-- Submit -->
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Register">
+                </td>
+            </tr>
+
+        </table>
+
+    </form>
+
+</body>
+</html>
