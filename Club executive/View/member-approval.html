@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Member Approval — CampusHub</title>
+  <link rel="stylesheet" href="../../css/style.css">
+<link rel="stylesheet" href="../../css/approval.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <a href="index.html" class="logo"><img src="../../images/campus-hub-logo.jpeg" alt="CampusHub Logo"></a>
+        <nav class="topnav">
+            <ul>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="member-approval.html" class="active">Approvals</a></li>
+                <li><a href="event-create.html">Events</a></li>
+                <li><a href="recruitment.html">Recruitment</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container-wide">
+        <h1 id="page-title">Member Approval</h1>
+        <p class="text-center subtitle">Review and approve pending club membership requests.</p>
+
+        <div class="search-bar">
+            <input type="text" placeholder="Search by name or student ID...">
+            <button class="btn btn-small">Search</button>
+        </div>
+
+        <section class="card-grid">
+            
+            <article class="request-card">
+                <span class="badge">Pending</span>
+                <div class="avatar">AR</div>
+                <h3>Ahmed Rifat</h3>
+                <p class="meta">ID: 22-12345-1 &middot; CSE</p>
+                <p class="bio">Interested in programming contests and web development.</p>
+                <div class="actions">
+                    <button class="btn btn-small">Approve</button>
+                    <button class="btn btn-small btn-secondary">Reject</button>
+                </div>
+            </article>
+
+            
+            <article class="request-card">
+                <span class="badge">Pending</span>
+                <div class="avatar">NS</div>
+                <h3>Nusrat Sultana</h3>
+                <p class="meta">ID: 22-67890-2 &middot; BBA</p>
+                <p class="bio">Marketing enthusiast, wants to join the events team.</p>
+                <div class="actions">
+                    <button class="btn btn-small">Approve</button>
+                    <button class="btn btn-small btn-secondary">Reject</button>
+                </div>
+            </article>
+
+           
+            <article class="request-card">
+                <span class="badge">Pending</span>
+                <div class="avatar">TK</div>
+                <h3>Tanvir Khan</h3>
+                <p class="meta">ID: 21-11111-3 &middot; EEE</p>
+                <p class="bio">Robotics hobbyist, looking for a creative community.</p>
+                <div class="actions">
+                    <button class="btn btn-small">Approve</button>
+                    <button class="btn btn-small btn-secondary">Reject</button>
+                </div>
+            </article>
+        </section>
+
+        <section class="log-panel mt-2">
+            <h2>Approval Log</h2>
+            <div class="log-scroll">
+                <p><strong>10:02</strong> — Ahmed Rifat requested to join.</p>
+                <p><strong>10:15</strong> — Nusrat Sultana requested to join.</p>
+                <p><strong>10:31</strong> — Tanvir Khan requested to join.</p>
+                <p><strong>10:45</strong> — Sadia Mahmud requested to join.</p>
+                <p><strong>11:00</strong> — Prior member Muhammad Ali approved.</p>
+                <p><strong>11:20</strong> — Prior member Farhana Akter approved.</p>
+                <p><strong>11:42</strong> — Prior member Rafiul Islam rejected.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 CampusHub &middot; Clubs • Events • Community</p>
+    </footer>
+</body>
+</html>

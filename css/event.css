@@ -1,0 +1,50 @@
+
+#page-title::before {
+    content: "📅 ";
+    font-size: 0.9em;
+}
+
+
+.help-fab {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    border: none;
+    background: var(--royal-blue);
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 6px 16px rgba(11, 87, 208, 0.4);
+    z-index: 50;
+    transition: transform 0.25s, background 0.25s;
+}
+
+
+.help-fab:hover {
+    transform: scale(1.1);
+    background: var(--navy-dark);
+}
+
+
+.preview-card {
+    background: var(--light-blue);
+    border: 2px dashed var(--royal-blue);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+.preview-card h2 {
+    font-size: 1.1rem;
+    margin-bottom: 6px;
+    color: var(--navy-dark);
+}
+
+.preview-card p {
+    font-size: 0.95rem;
+    color: var(--text-main);
+}

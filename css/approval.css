@@ -1,0 +1,115 @@
+
+.search-bar {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 1.5rem;
+    background: var(--bg-white);
+    padding: 12px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    border: 1px solid #e0e0e0;
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 10px 12px;
+    border: 1.5px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.search-bar input:focus {
+    outline: none;
+    border-color: var(--royal-blue);
+}
+
+
+.card-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    justify-content: center;
+}
+
+
+.request-card {
+    position: relative;
+    background: var(--bg-white);
+    border: 1px solid #e0e0e0;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 1.5rem 1.25rem 1.25rem;
+    width: 260px;
+    text-align: center;
+    transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.request-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+
+.badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: var(--light-blue);
+    color: var(--navy-dark);
+    font-size: 0.7rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 3px 10px;
+    border-radius: 999px;
+    letter-spacing: 1px;
+    border: 1px solid var(--royal-blue);
+}
+
+
+.avatar {
+    width: 64px;
+    height: 64px;
+    line-height: 64px;
+    margin: 0 auto 10px;
+    border-radius: 50%;
+    background: var(--royal-blue);
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+
+.request-card h3 { margin-bottom: 4px; font-size: 1.1rem; }
+.meta { font-size: 0.85rem; color: var(--text-light); margin-bottom: 10px; }
+.bio { font-size: 0.9rem; color: var(--text-main); margin-bottom: 14px; min-height: 48px; }
+.actions { display: flex; gap: 8px; justify-content: center; }
+
+
+.log-panel {
+    background: var(--bg-white);
+    border-left: 4px solid var(--royal-blue);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 1.25rem;
+    border-top: 1px solid #e0e0e0;
+    border-right: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.log-panel h2 { margin-bottom: 0.75rem; font-size: 1.2rem; color: var(--navy-dark); }
+
+.log-scroll {
+    height: 150px;
+    overflow-y: auto;
+    padding-right: 8px;
+}
+
+.log-scroll p {
+    font-size: 0.9rem;
+    padding: 6px 0;
+    border-bottom: 1px dashed #eee;
+}
+
+@media (max-width: 600px) {
+    .request-card { width: 100%; }
+}

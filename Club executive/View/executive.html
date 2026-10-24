@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Club Executive Registration</title>
+    
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/register.css">
+</head>
+<body>
+
+   <header class="site-header site-header--centered">
+    <a href="#" class="logo">
+        <img src="../../images/campus-hub-logo.jpeg" alt="CampusHub Logo">
+    </a>
+</header>
+    
+    <h2 align="center" id="page-title">Club Executive Registration</h2>
+
+    <form>
+        <table align="center" cellpadding="8" class="original-table">
+            
+            <tr>
+                <td>
+                    <label>Full Name:</label><br>
+                    <input type="text" name="fullname" required>
+                </td>
+                <td>
+                    <label>Student ID:</label><br>
+                    <input type="text" name="studentid" required>
+                </td>
+            </tr>
+
+           
+            <tr>
+                <td>
+                    <label>University Email:</label><br>
+                    <input type="email" name="email" required>
+                </td>
+                <td>
+                    <label>Phone Number:</label><br>
+                    <input type="tel" name="phone" required>
+                </td>
+            </tr>
+
+            
+            <tr>
+                <td>
+                    <label>Department:</label><br>
+                    <select name="department" required>
+                        <option value="">-- Select Department --</option>
+                        <option value="CSE">Computer Science & Engineering</option>
+                        <option value="EEE">Electrical & Electronic Engineering</option>
+                        <option value="BBA">Business Administration</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </td>
+                <td>
+                    <label>Club Name:</label><br>
+                    <input type="text" name="clubname" required>
+                </td>
+            </tr>
+
+           
+            <tr>
+                <td colspan="2">
+                    <label>Club Position:</label><br>
+                    <select name="position" required>
+                        <option value="">-- Select Position --</option>
+                        <option value="President">President</option>
+                        <option value="Vice President">Vice President</option>
+                        <option value="General Secretary">General Secretary</option>
+                        <option value="Executive">Executive Member</option>
+                    </select>
+                </td>
+            </tr>
+
+            
+            <tr>
+                <td colspan="2">
+                    <label>Responsibilities:</label><br>
+                    <input type="checkbox" name="permissions" value="club_manage"> Club Manage<br>
+                    <input type="checkbox" name="permissions" value="member_approval"> Member Approval<br>
+                    <input type="checkbox" name="permissions" value="event_create"> Event Create<br>
+                    <input type="checkbox" name="permissions" value="recruitment"> Recruitment
+                </td>
+            </tr>
+
+            
+            <tr>
+                <td>
+                    <label>Password:</label><br>
+                    <input type="password" name="password" required>
+                </td>
+                <td>
+                    <label>Confirm Password:</label><br>
+                    <input type="password" name="confirm_password" required>
+                </td>
+            </tr>
+
+            
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Register" class="btn-submit">
+                </td>
+            </tr>
+        </table>
+    </form>
+    
+    <footer class="site-footer">
+        <p>&copy; 2026 CampusHub &middot; Clubs • Events • Community</p>
+    </footer>
+
+</body>
+</html>
