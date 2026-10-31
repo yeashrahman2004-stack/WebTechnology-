@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Event — CampusHub</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/event.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <a href="index.html" class="logo">
+            <img src="../../images/campus-hub-logo.jpeg" alt="CampusHub Logo">
+        </a>
+        <nav class="topnav">
+            <ul>
+                <li><a href="executive.html">Register</a></li>
+                <li><a href="member-approval.html">Approvals</a></li>
+                <li><a href="event-create.html" class="active">Events</a></li>
+                <li><a href="recruitment.html">Recruitment</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <button class="help-fab" title="Need help?">?</button>
+
+    <main class="container">
+        <h1 id="page-title">Create Event</h1>
+
+        <div class="form-card">
+            <!-- Form Validation Function -->
+            <form onsubmit="return validateEvent(event)">
+                
+                <!-- Error message display -->
+                <p id="eventError" class="error-msg"></p>
+
+                <div class="form-group">
+                    <label for="eventtitle">Event Title</label>
+                    <input type="text" id="eventtitle" name="eventtitle" placeholder="e.g. Web Dev Bootcamp 2026" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="eventdesc">Description</label>
+                    <textarea id="eventdesc" name="eventdesc" rows="4" placeholder="What is this event about?" required></textarea>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="eventdate">Date</label>
+                        <input type="date" id="eventdate" name="eventdate" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="eventtime">Time</label>
+                        <input type="text" id="eventtime" name="eventtime" placeholder="e.g. 10:00 AM" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="eventvenue">Venue</label>
+                        <input type="text" id="eventvenue" name="eventvenue" placeholder="e.g. Annex 502" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="eventseats">Max Seats</label>
+                        <input type="number" id="eventseats" name="eventseats" min="1" placeholder="e.g. 100" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="eventcategory">Category</label>
+                    <select id="eventcategory" name="eventcategory" required>
+                        <option value="">-- Select Category --</option>
+                        <option value="workshop">Workshop</option>
+                        <option value="seminar">Seminar</option>
+                        <option value="competition">Competition</option>
+                        <option value="social">Social / Fun</option>
+                    </select>
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <label>
+                        <input type="checkbox" name="notify" value="email"> Notify all club members by email
+                    </label>
+                </div>
+
+                <div class="text-center mt-2">
+                    <button type="submit" class="btn">Publish Event</button>
+                    <button type="reset" class="btn btn-secondary">Reset</button>
+                </div>
+            </form>
+        </div>
+
+        <section class="preview-card">
+            <h2>Preview</h2>
+            <p>Once published, your event will appear on the club dashboard and be visible to all members.</p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 CampusHub &middot; Clubs • Events • Community</p>
+    </footer>
+
+    <!-- External JavaScript (Notice the single ../) -->
+    <script src="../js/validation.js"></script>
+</body>
+</html>

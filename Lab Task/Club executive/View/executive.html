@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club Executive Registration — CampusHub</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/register.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+        <a href="index.html" class="logo">
+            <img src="../../images/campus-hub-logo.jpeg" alt="CampusHub Logo">
+        </a>
+    </header>
+
+    <main class="container">
+        <h2 align="center" id="page-title">Club Executive Registration</h2>
+
+        <form onsubmit="return myVal(event)">
+            <table align="center" cellpadding="8" class="original-table">
+                <!-- Full Name + Student ID -->
+                <tr>
+                    <td>
+                        <label for="fullname">Full Name:</label><br>
+                        <input type="text" name="fullname" id="fullname" required>
+                        <span id="nameerror" class="error-msg"></span>
+                    </td>
+                    <td>
+                        <label for="studentid">Student ID:</label><br>
+                        <input type="text" name="studentid" id="studentid" required>
+                    </td>
+                </tr>
+
+                <!-- University Email + Phone Number -->
+                <tr>
+                    <td>
+                        <label for="email">University Email:</label><br>
+                        <input type="email" name="email" id="email" required>
+                        <span id="emailerror" class="error-msg"></span>
+                    </td>
+                    <td>
+                        <label for="phone">Phone Number:</label><br>
+                        <input type="tel" name="phone" id="phone" required>
+                    </td>
+                </tr>
+
+                <!-- Department + Club Name -->
+                <tr>
+                    <td>
+                        <label for="department">Department:</label><br>
+                        <select name="department" id="department" required>
+                            <option value="">-- Select Department --</option>
+                            <option value="CSE">Computer Science & Engineering</option>
+                            <option value="EEE">Electrical & Electronic Engineering</option>
+                            <option value="BBA">Business Administration</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </td>
+                    <td>
+                        <label for="clubname">Club Name:</label><br>
+                        <input type="text" name="clubname" id="clubname" required>
+                    </td>
+                </tr>
+
+                <!-- Club Position -->
+                <tr>
+                    <td colspan="2">
+                        <label for="position">Club Position:</label><br>
+                        <select name="position" id="position" required>
+                            <option value="">-- Select Position --</option>
+                            <option value="President">President</option>
+                            <option value="Vice President">Vice President</option>
+                            <option value="General Secretary">General Secretary</option>
+                            <option value="Executive">Executive Member</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <!-- Responsibilities -->
+                <tr>
+                    <td colspan="2">
+                        <label>Responsibilities:</label><br>
+                        <input type="checkbox" name="permissions" value="club_manage"> Club Manage<br>
+                        <input type="checkbox" name="permissions" value="member_approval"> Member Approval<br>
+                        <input type="checkbox" name="permissions" value="event_create"> Event Create<br>
+                        <input type="checkbox" name="permissions" value="recruitment"> Recruitment
+                    </td>
+                </tr>
+
+                <!-- Password + Confirm Password -->
+                <tr>
+                    <td>
+                        <label for="password">Password:</label><br>
+                        <input type="password" name="password" id="password" required>
+                    </td>
+                    <td>
+                        <label for="confirm_password">Confirm Password:</label><br>
+                        <input type="password" name="confirm_password" id="confirm_password" required>
+                    </td>
+                </tr>
+                
+                <!-- Error message for password spans both columns -->
+                <tr>
+                    <td colspan="2">
+                        <span id="passerror" class="error-msg"></span>
+                    </td>
+                </tr>
+
+                <!-- Submit -->
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="submit" value="Register" class="btn-submit">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 CampusHub &middot; Clubs • Events • Community</p>
+    </footer>
+
+    <!-- External JavaScript (Notice the single ../) -->
+    <script src="../js/validation.js"></script>
+</body>
+</html>
