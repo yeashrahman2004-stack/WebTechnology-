@@ -1,0 +1,141 @@
+
+* {
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 20px;
+    color: #333333;
+}
+
+header {
+    text-align: center;
+    padding: 0;
+    border-bottom: 1px solid #ccc;
+}
+
+h1 {
+    color: #1e3a5f;
+    font-size: 28px;
+}
+
+img {
+    display: block;
+    margin: 15px auto;
+    max-width: 100%;
+    height: auto;
+}
+
+form {
+    background-color: white;
+    max-width: 650px;
+    margin: 25px auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px #d6dce2;
+}
+
+fieldset {
+    border: 1px solid #b8c7d9;
+    border-radius: 7px;
+    padding: 20px;
+}
+
+legend {
+    color: #2563eb;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+label {
+    font-size: 15px;
+}
+
+input {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="number"],
+input[type="password"] {
+    width: 100%;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+}
+
+select {
+    padding: 9px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 14px;
+}
+
+button {
+    padding: 11px 28px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.form-box {
+    background-color: white;
+    border-radius: 10px;
+}
+
+#submit {
+    background-color: #2563eb;
+    color: white;
+}
+
+#reset {
+    background-color: #6b7280;
+    color: white;
+}
+
+form > fieldset {
+    margin-bottom: 15px;
+}
+
+input:focus, select:focus {
+    outline: 2px solid #93b4ff;
+    border-color: #2563eb;
+}
+
+#submit:hover {
+    background-color: #1d4ed8;
+}
+
+#reset:hover {
+    background-color: #4b5563;
+}
+
+legend::first-letter {
+    color: #1d4ed8;
+}
+
+/* Error Message Style */
+.error {
+    color: red;
+    font-size: 13px;
+    margin: 5px 0 0;
+    font-weight: bold;
+}
+
+#formMessage {
+    font-size: 15px;
+    font-weight: bold;
+}
