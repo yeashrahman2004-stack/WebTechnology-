@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Event Coordinator Account Registration</title>
+    <link rel="stylesheet" href="../CSS/registration.css">
+</head>
+<body>
+
+    <header>
+        <h1>Create An Event Coordinator Account</h1>
+    </header>
+
+    <main>
+        <form method="post" onsubmit="return myVal()">
+            <fieldset>
+                <legend>Personal and University Information</legend>
+
+                    <label for="fullName">Full Name:</label><br>
+                    <input type="text" id="fullName" name="fullName" ><p id="fullNameError"></p>
+               
+                    <label for="studentId">Student ID:</label><br>
+                    <input type="text" id="studentId" name="studentId" ><p id="studentIdError"></p>
+                
+                    <label for="email">University Email:</label><br>
+                    <input type="email" id="email" name="email"><p id="emailError"></p>
+                
+                    <label for="phone">Phone Number:</label><br>
+                    <input type="tel" id="phone" name="phone" ><p id="phoneError"></p>
+                
+                    <label for="department">Department:</label><br>
+                    <select id="department" name="department">
+                        <option value="">Select Department</option>
+                        <option value="cse">Computer Science & Engineering</option>
+                        <option value="eee">Electrical & Electronic Engineering</option>
+                        <option value="bba">Business Administration</option>
+                        <option value="architecture">Architecture</option>
+                        <option value="english">English</option>
+                        <option value="other">Other</option>
+                    </select><p id="departmentError"></p>
+                
+                    <label for="organization">Club / Organization:</label><br>
+                    <input type="text" id="organization" name="organization"><p id="organizationError"></p>
+                
+                    <label for="position">Role:</label><br>
+                    <select id="position" name="position">
+                        <option value="">Select Role</option>
+                        <option value="event-coordinator">Event Coordinator</option>
+                        <option value="assistant-coordinator">Assistant Event Coordinator</option>
+                        <option value="event-manager">Event Manager</option>
+                    </select><p id="positionError"></p>
+                
+                    <label for="password">Password:</label><br>
+                    <input type="password" id="password" name="password"><p id="passwordError"></p>
+                
+                    <label for="confirmPassword">Confirm Password:</label><br>
+                    <input type="password" id="confirmPassword" name="confirmPassword"><p id="confirmPasswordError"></p>
+            </fieldset>
+
+                <input type="checkbox" id="confirmInfo" name="confirmInfo">
+                <label for="confirmInfo">I confirm that the information provided is accurate.</label>
+                <p id="confirmInfoError"></p>
+           
+
+            <button type="submit">Create Account</button>
+            <button type="reset">Clear Form</button>
+        </form>
+
+        <p>Already have an account? <a href="login.html">Log in here</a></p>
+    </main>
+ <script src="../JS/registration.js"></script>
+</body>
+</html>
