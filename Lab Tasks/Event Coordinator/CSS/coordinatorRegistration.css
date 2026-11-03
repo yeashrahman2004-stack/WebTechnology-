@@ -1,0 +1,149 @@
+/*  Base */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333333;
+    background-color: #f4f6fb;
+}
+
+a {
+    color: #12a5d5;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #1e3a8a;
+}
+
+/*  Header */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 15px 30px;
+    text-align: center;
+    background-color: #1e3a8a;
+    color: white;
+}
+
+h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+/*  Main container */
+main {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/*  Form  */
+form {
+    padding: 25px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+form p {
+    color: red;
+    font-size: 13px;
+    margin-top: 3px;
+    margin-bottom: 10px;
+}
+fieldset {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 2px solid #bfdbfe;
+    border-radius: 10px;
+}
+
+legend {
+    padding: 0 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #1e3a8a;
+}
+
+/*  Labels and inputs  */
+label {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+select {
+    display: block;
+    width: 100%;
+    margin: 5px 0 15px;
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:hover,
+select:hover {
+    border-color: #12a5d5;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #1e3a8a;
+    box-shadow: 0 0 5px rgba(30, 58, 138, 0.4);
+}
+
+small {
+    display: block;
+    margin-top: -10px;
+    margin-bottom: 15px;
+    font-size: 13px;
+    color: #6b7280;
+}
+
+/*  Checkbox  */
+#confirmInfo {
+    margin-right: 8px;
+}
+
+/*  Buttons  */
+button {
+    margin: 20px 10px 0 0;
+    padding: 10px 20px;
+    font-size: 15px;
+    color: white;
+    background-color: #12a5d5;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1e3a8a;
+    transform: translateY(-2px);
+}
+
+button[type="reset"] {
+    background-color: #12a5d5;
+}
+
+button[type="reset"]:hover {
+    background-color: #1e3a8a;
+}
+
+/* Login link */
+main > p {
+    margin-top: 20px;
+    text-align: center;
+}
